@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
 
-router.post('/', function(req, res, next){
+router.post('/test', function(req, res, next){
   console.log(req.body)
   if(req.body.user === 'Bana'){
     res.json({
